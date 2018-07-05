@@ -10,6 +10,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
+    @puppy
     erb :disply_puppy.erb
   end
 
