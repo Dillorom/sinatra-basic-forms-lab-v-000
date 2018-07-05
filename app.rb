@@ -10,7 +10,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @puppy
+    @puppy = Puppy.new()
     erb :disply_puppy
   end
 
